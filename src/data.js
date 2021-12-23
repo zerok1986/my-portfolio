@@ -1,60 +1,45 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: 'moksha',
+    subtitle: 'Built with MERN Stack',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
+      'A mobile-first designed SPA made with React that brings together professionals and users of activities such as Yoga, Meditation or Tai Chi allowing them to create and attend outdoors/indoors activities. Developed with React, NodeJS, Express, MongoDB, Mongoose, Vanilla JavaScript, Google Maps API, HTML5, CSS3, Bootstrap and Material UI.',
+    image: './moksha-demo.gif',
+    link: 'https://moksha-app.herokuapp.com/',
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: 'Frik',
+    subtitle: 'Built with Nodejs, Express, MongoDB and HandlebarsJS',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
+      'Search engine and social network for comics / manga to track issues, see recommendations and interact with people who have the same tastes in comics developed in Node, Express, MongoDB and Javascript.',
+    image: './frik-demo.gif',
+    link: 'https://frik-app.herokuapp.com/',
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: 'Ski Run Maister',
+    subtitle: 'Built with Vanilla Javascript, Canvas, HTML5, CSS3',
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
+      'Classic 2D obstacles/run videogame with Ski and Jagermaister themes developed with Canvas and DOM manipulation',
+    image: './skirunmaister-demo.gif',
+    link: 'https://zerok1986.github.io/skyJumpProject/',
   },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "Jesse Hicks",
-    company: "Zoozle",
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
-    name: "Ruben Alvarez",
-    company: "Dooble.io",
-  },
-];
+]
 
 export const skills = [
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Node",
-  "GraphQL",
-  "Material UI",
-];
+  'JavaScript',
+  'React',
+  'Next.js',
+  'Redux',
+  'Node',
+  'Express',
+  'MongoDB',
+  'SQL Server',
+  'C Language',
+  'Java',
+  'Python',
+  'Flask',
+  'HTML5',
+  'CSS3',
+  'Material UI',
+  'React-Bootstrap',
+]
