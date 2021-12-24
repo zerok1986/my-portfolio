@@ -13,6 +13,10 @@ const Contact = () => {
       .join('&')
   }
 
+  const resetForm = () => {
+    document.getElementById('contact-form').reset()
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     fetch('/', {
@@ -20,7 +24,10 @@ const Contact = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', name, email, message }),
     })
-      .then(() => alert('Message sent!'))
+      .then(() => {
+        alert('Message sent!')
+        resetForm()
+      })
       .catch((err) => alert(err))
   }
 
@@ -67,14 +74,15 @@ const Contact = () => {
           netlify
           name="contact"
           onSubmit={handleSubmit}
+          id="contact-form"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
           <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
+            If you like what you see, let's stay in contact! Feel free to send
+            me a message and I'll reply to you ASAP. Cheers! 😃
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">

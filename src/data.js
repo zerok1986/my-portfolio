@@ -1,9 +1,9 @@
 export const projects = [
   {
     title: 'moksha',
-    subtitle: 'Built with MERN Stack',
+    subtitle: 'Built with MERN Stack. Styled with MaterialUI',
     description:
-      'A mobile-first designed SPA made with React that brings together professionals and users of activities such as Yoga, Meditation or Tai Chi allowing them to create and attend outdoors/indoors activities. Developed with React, NodeJS, Express, MongoDB, Mongoose, Vanilla JavaScript, Google Maps API, HTML5, CSS3, Bootstrap and Material UI.',
+      'A mobile-first designed SPA that brings together professionals and users of Zen activities allowing them to create, search and join outdoors/indoors activities',
     image: './moksha-demo.gif',
     link: 'https://moksha-app.herokuapp.com/',
   },
@@ -11,7 +11,7 @@ export const projects = [
     title: 'Frik',
     subtitle: 'Built with Nodejs, Express, MongoDB and HandlebarsJS',
     description:
-      'Search engine and social network for comics / manga to track issues, see recommendations and interact with people who have the same tastes in comics developed in Node, Express, MongoDB and Javascript.',
+      'Search engine and social network for comics / manga to track issues, see recommendations and interact with people who have the same tastes in comics',
     image: './frik-demo.gif',
     link: 'https://frik-app.herokuapp.com/',
   },
@@ -41,5 +41,5 @@ export const skills = [
   'HTML5',
   'CSS3',
   'Material UI',
-  'React-Bootstrap',
+  'tailwindCSS',
 ]
