@@ -52,7 +52,8 @@ const Contact = () => {
                 ADDRESS
               </h2>
               <p className="mt-1">
-                C/ Moreno Torroba 34, 2B <br />
+                C/ Moreno Torroba 34
+                <br />
                 Majadahonda, Madrid (Spain)
               </p>
             </div>
@@ -82,7 +83,7 @@ const Contact = () => {
           </h2>
           <p className="leading-relaxed mb-5">
             If you like what you see, let's stay in contact! Feel free to send
-            me a message and I'll reply to you ASAP. Cheers!{' '}
+            me a message and I'll reply to you ASAP. Cheers!
             <span role="img" aria-label="smiley">
               😃
             </span>
