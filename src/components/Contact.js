@@ -60,7 +60,7 @@ const Contact = () => {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-400 leading-relaxed">
+              <a className="text-red-700 leading-relaxed">
                 miguel.abad86@gmail.com
               </a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
@@ -82,7 +82,10 @@ const Contact = () => {
           </h2>
           <p className="leading-relaxed mb-5">
             If you like what you see, let's stay in contact! Feel free to send
-            me a message and I'll reply to you ASAP. Cheers! 😃
+            me a message and I'll reply to you ASAP. Cheers!{' '}
+            <span role="img" aria-label="smiley">
+              😃
+            </span>
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -124,7 +127,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            className="text-white bg-red-800 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >
             Submit
           </button>
