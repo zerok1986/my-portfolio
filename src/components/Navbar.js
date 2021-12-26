@@ -1,38 +1,153 @@
-import React from 'react'
-import { ArrowRightIcon } from '@heroicons/react/solid'
+import React, { useState } from 'react'
+import { Transition } from '@headlessui/react'
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className="bg-gray-800 md:sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
-        <a
-          href="#about"
-          className="flex flex-wrap items-center text-base justify-center ml-3 text-xl"
-        >
-          <img src="./M.png" className="w-8" alt="M logo"></img>
-        </a>
-        <div className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 hover:text-white">
-            Projects
-          </a>
-          <a href="#skills" className="mr-5 hover:text-white">
-            Skills
-          </a>
-          <a
-            href="https://zerok1986.github.io/my-resume-html-css/"
-            className="mr-5 hover:text-white"
-          >
-            Resume
-          </a>
+    <nav className="bg-gray-800 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="relative flex items-center justify-between h-12">
+          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              {!isOpen ? (
+                <svg
+                  className="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="hidden h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
+          <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div className="flex-shrink-0 flex items-center">
+              <a href="#about">
+                <img
+                  className="block lg:hidden h-8 w-auto"
+                  src="./M.png"
+                  alt="mikydev logo"
+                />
+              </a>
+              <a href="#about">
+                <img
+                  className="hidden lg:block h-8 w-auto"
+                  src="./M.png"
+                  alt="mikydev logo"
+                />
+              </a>
+            </div>
+            <div className="hidden sm:block sm:ml-6">
+              <div className="flex space-x-4">
+                <a
+                  href="#projects"
+                  className="text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Projects
+                </a>
+                <a
+                  href="#skills"
+                  className="text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Skills
+                </a>
+                <a
+                  target="_blank"
+                  href="https://zerok1986.github.io/my-resume-html-css/"
+                  className="text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  rel="noopener noreferrer"
+                >
+                  My Resume
+                </a>
+                <a
+                  href="#contact"
+                  className="text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Contact Me
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <a
-          href="#contact"
-          className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-red-900 rounded text-base mt-4 md:mt-0"
-        >
-          Hire Me
-          <ArrowRightIcon className="w-4 h-4 ml-1" />
-        </a>
       </div>
+
+      <Transition
+        show={isOpen}
+        enter="transition ease-out duration-100 transform"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="transition ease-in duration-75 transform"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        {(ref) => (
+          <div className="sm:hidden" id="mobile-menu">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              <a
+                href="#projects"
+                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                aria-current="page"
+              >
+                Projects
+              </a>
+
+              <a
+                href="#skills"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Skills
+              </a>
+
+              <a
+                target="_blank"
+                href="https://zerok1986.github.io/my-resume-html-css/"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                rel="noopener noreferrer"
+              >
+                My Resume
+              </a>
+
+              <a
+                href="#contact"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Contact Me
+              </a>
+            </div>
+          </div>
+        )}
+      </Transition>
     </nav>
   )
 }
