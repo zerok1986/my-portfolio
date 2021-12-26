@@ -16,7 +16,11 @@ const Projects = () => {
             <a href="https://moksha-app.herokuapp.com/"> moksha</a>, which has
             been selected as one of the finalist projects for the IronHack's
             Hackshow in 2022. You can find more samples of my work in my
-            <a href="https://github.com/zerok1986"> GitHub</a>.
+            <span>
+              <a className="text-red-700" href="https://github.com/zerok1986">
+                &nbsp;GitHub
+              </a>
+            </span>
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
