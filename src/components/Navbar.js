@@ -116,7 +116,7 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a
                 href="#projects"
-                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 aria-current="page"
               >
                 Projects
@@ -124,7 +124,7 @@ const Navbar = () => {
 
               <a
                 href="#skills"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Skills
               </a>
@@ -132,7 +132,7 @@ const Navbar = () => {
               <a
                 target="_blank"
                 href="https://zerok1986.github.io/my-resume-html-css/"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 rel="noopener noreferrer"
               >
                 My Resume
@@ -140,7 +140,7 @@ const Navbar = () => {
 
               <a
                 href="#contact"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Contact Me
               </a>
