@@ -26,20 +26,68 @@ export const projects = [
 ]
 
 export const skills = [
-  'JavaScript',
-  'React',
-  'Next.js',
-  'Redux',
-  'Node',
-  'Express',
-  'MongoDB',
-  'SQL Server',
-  'C Language',
-  'Java',
-  'Python',
-  'Flask',
-  'HTML5',
-  'CSS3',
-  'Material UI',
-  'tailwindCSS',
+  {
+    name: 'Javascript',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+  },
+  {
+    name: 'React',
+    url: 'https://reactjs.org/',
+  },
+  {
+    name: 'Next.js',
+    url: 'https://nextjs.org/',
+  },
+  {
+    name: 'Redux',
+    url: 'https://redux.js.org/',
+  },
+  {
+    name: 'Node.js',
+    url: 'https://nodejs.org/',
+  },
+  {
+    name: 'Express',
+    url: 'https://expressjs.com/',
+  },
+  {
+    name: 'MongoDB',
+    url: 'https://www.mongodb.com/',
+  },
+  {
+    name: 'MySQL',
+    url: 'https://www.mysql.com/',
+  },
+  {
+    name: 'C Language',
+    url: 'https://en.wikipedia.org/wiki/C_(programming_language)',
+  },
+  {
+    name: 'Java',
+    url: 'https://www.java.com/',
+  },
+  {
+    name: 'Python',
+    url: 'https://www.python.org/',
+  },
+  {
+    name: 'Flask',
+    url: 'https://flask.palletsprojects.com/',
+  },
+  {
+    name: 'HTML5',
+    url: 'https://developer.mozilla.org/en-US/docs/Glossary/HTML5',
+  },
+  {
+    name: 'CSS3',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+  },
+  {
+    name: 'Material UI',
+    url: 'https://mui.com/',
+  },
+  {
+    name: 'tailwindCSS',
+    url: 'https://tailwindcss.com/',
+  },
 ]
