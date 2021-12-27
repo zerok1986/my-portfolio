@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { Transition } from '@headlessui/react'
+import Toggle from '../theme/ThemeToggle'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className="bg-gray-800 sticky top-0 z-50">
+    <nav className="bg-gray-100 dark:bg-gray-800 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-12">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -72,30 +73,33 @@ const Navbar = () => {
               <div className="flex space-x-4">
                 <a
                   href="#projects"
-                  className="text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-black dark:text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Projects
                 </a>
                 <a
                   href="#skills"
-                  className="text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-black dark:text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Skills
                 </a>
                 <a
                   target="_blank"
                   href="https://zerok1986.github.io/my-resume-html-css/"
-                  className="text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-black dark:text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   rel="noopener noreferrer"
                 >
                   My Resume
                 </a>
                 <a
                   href="#contact"
-                  className="text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-black dark:text-gray-300 hover:bg-red-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Contact Me
                 </a>
+                <div className="absolute right-0 top-0 mr-4 mt-2 md:mr-6 md:mt-2">
+                  <Toggle />
+                </div>
               </div>
             </div>
           </div>
@@ -116,7 +120,7 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <a
                 href="#projects"
-                className="text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-black dark:text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 aria-current="page"
               >
                 Projects
@@ -124,7 +128,7 @@ const Navbar = () => {
 
               <a
                 href="#skills"
-                className="text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-black dark:text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Skills
               </a>
@@ -132,7 +136,7 @@ const Navbar = () => {
               <a
                 target="_blank"
                 href="https://zerok1986.github.io/my-resume-html-css/"
-                className="text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-black dark:text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 rel="noopener noreferrer"
               >
                 My Resume
@@ -140,10 +144,13 @@ const Navbar = () => {
 
               <a
                 href="#contact"
-                className="text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="text-black dark:text-gray-300 hover:bg-red-900 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Contact Me
               </a>
+              <div className="absolute right-0 top-0 mr-4 mt-2 md:mr-6 md:mt-2">
+                <Toggle />
+              </div>
             </div>
           </div>
         )}

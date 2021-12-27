@@ -5,7 +5,7 @@ const About = () => {
     <section id="about">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+          <h1 className="text-black title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white">
             Hi, I'm Miky!
             <br />I love to build next-gen web apps
           </h1>
@@ -23,7 +23,7 @@ const About = () => {
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-red-800 hover:text-white rounded text-lg"
+              className="ml-4 inline-flex text-black dark:text-gray-400 bg-gray-100 dark:bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-red-800 hover:text-white rounded text-lg"
             >
               See My Projects
             </a>
