@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import About from './components/About'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Navbar from './components/layout/Navbar'
+import About from './components/pages/About'
+import Projects from './components/pages/Projects'
+import Skills from './components/pages/Skills'
+import Contact from './components/pages/Contact'
+import Footer from './components/layout/Footer'
 
 const App = () => {
   return (

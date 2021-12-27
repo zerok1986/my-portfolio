@@ -1,6 +1,6 @@
 import React from 'react'
 import { TerminalIcon, ChipIcon } from '@heroicons/react/solid'
-import { skills } from '../data'
+import { skills } from '../data/data'
 
 const Skills = () => {
   return (
