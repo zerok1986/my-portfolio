@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 const Contact = () => {
+  const API_KEY = process.env.REACT_APP_API_KEY
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -44,7 +45,7 @@ const Contact = () => {
             marginHeight={0}
             marginWidth={0}
             style={{ filter: 'opacity(0.7)' }}
-            src="https://www.google.com/maps/embed/v1/place?q=Calle+Moreno+Torroba+34&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src={`https://www.google.com/maps/embed/v1/place?q=Calle+Moreno+Torroba+34&key=${API_KEY}`}
           />
           <div className="bg-gray-100 dark:bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
