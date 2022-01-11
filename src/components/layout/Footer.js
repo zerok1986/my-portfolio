@@ -4,9 +4,9 @@ import { CodeIcon } from '@heroicons/react/solid'
 const Footer = () => {
   return (
     <footer className="bg-gray-100 dark:bg-gray-800 relative inset-x-0 bottom-0 h-8">
-      <div className="flex flex-row justify-center content-center mt-5">
-        <CodeIcon className="text-red-800 w-5 h-5 ml-2 mr-2 mt-1" />
-        <p className="text-xs sm:text-base mt-1 sm:mt-0 justify-center content-center">
+      <div className="flex flex-row align-center justify-center content-center">
+        <CodeIcon className="text-red-800 w-5 h-5 ml-2 mr-2 mt-1.5" />
+        <p className="text-xs sm:text-base mt-1.5 sm:mt-0.5 justify-center content-center">
           <span role="img" aria-label="copyright emoji">
             ©️{' '}
           </span>
