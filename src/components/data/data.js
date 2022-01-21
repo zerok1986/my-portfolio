@@ -8,6 +8,14 @@ export const projects = [
     link: 'https://moksha-app.herokuapp.com/',
   },
   {
+    title: 'The Phone Cave',
+    subtitle: 'Built with MERN stack. Styled with TailwindCSS',
+    description:
+      "Responsive SPA web app simulating an online phone eCommerce. Started as a challenge from IronHack's Career Week and ended as a personal project where I can put in practice what I learnt or I'm currently learning",
+    image: './thePhoneCave-demo.gif',
+    link: 'https://my-phone-cave.herokuapp.com/phones',
+  },
+  {
     title: 'Frik',
     subtitle: 'Built with Nodejs, Express, MongoDB and HandlebarsJS',
     description:
