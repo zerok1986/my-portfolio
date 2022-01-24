@@ -11,7 +11,7 @@ export const projects = [
     title: 'The Phone Cave',
     subtitle: 'Built with MERN stack. Styled with TailwindCSS',
     description:
-      'Responsive SPA web app simulating an online phone eCommerce. Started as a challenge from IronHack and ended as a personal project',
+      "Responsive SPA web app simulating an online phone eCommerce. Started as a challenge from IronHack and ended as a personal project where I can train what I'm learning",
     image: './thePhoneCave-demo.gif',
     link: 'https://my-phone-cave.herokuapp.com/phones',
   },
