@@ -7,10 +7,11 @@ const Footer = () => {
       <div className="flex flex-row align-center justify-center content-center">
         <CodeIcon className="text-red-800 w-5 h-5 ml-2 mr-2 mt-1.5" />
         <p className="text-xs sm:text-base mt-1.5 sm:mt-0.5 justify-center content-center">
+          miguel.abad86@gmail.com - 
           <span role="img" aria-label="copyright emoji">
             ©️{' '}
           </span>
-          miguel.abad86@gmail.com <b>mikydev</b> - 2025
+          <b>mikydev</b> - 2025
         </p>
         <div className="flex flex-row justify-center content-center ml-5">
           <a href="https://github.com/zerok1986">
