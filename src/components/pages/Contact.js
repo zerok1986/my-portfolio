@@ -72,7 +72,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        {/* <form
+        <form
           netlify
           name="contact"
           onSubmit={handleSubmit}
@@ -139,7 +139,7 @@ const Contact = () => {
           >
             Submit
           </button>
-        </form> */}
+        </form>
       </div>
     </section>
   )

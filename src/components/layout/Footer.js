@@ -10,7 +10,7 @@ const Footer = () => {
           <span role="img" aria-label="copyright emoji">
             ©️{' '}
           </span>
-          <b>Miguel Angel Abad</b> - 2022
+          miguel.abad86@gmail.com <b>mikydev</b> - 2025
         </p>
         <div className="flex flex-row justify-center content-center ml-5">
           <a href="https://github.com/zerok1986">
